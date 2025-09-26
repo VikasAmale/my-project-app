@@ -1,0 +1,9 @@
+import json
+
+# NOTE: Replace this list with the actual class_names list from your trained model
+class_names = ['Class A', 'Class B', 'Class C', 'Normal', 'Rust'] 
+
+with open('model/class_names.json', 'w') as f:
+    json.dump(class_names, f)
+
+print("Saved class_names.json successfully!")
